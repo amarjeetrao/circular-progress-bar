@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react'
 import PropTypes from 'prop-types'
-import Style from './style.module.css';
+
+import Style from './style.module.css'
 
 function ProgressBar({
 	size,
@@ -12,7 +13,7 @@ function ProgressBar({
 	strokeOffset
 }) {
 	const circleCenter = size / 2;
-	const radius = circleCenter - strokeWidth / 2;
+	const radius = circleCenter - strokeWidth;
 	const circumference = 2 * Math.PI * radius;
 	const startOffset = 90 + strokeOffset;
 
@@ -60,6 +61,11 @@ function ProgressBar({
 		</div>
 	);
 }
+
+ProgressBar.defaultProps = {
+	strokeOffset: 0,
+	strokeStyle: 'square'
+};
 
 ProgressBar.propTypes = {
 	size: PropTypes.number.isRequired,
