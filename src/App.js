@@ -1,25 +1,20 @@
-import logo from './logo.svg';
+import ProgressBar from './components/progress/progressBar'
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div className='App'>
+			<ProgressBar
+				progress={20}
+				size={225}
+				strokeWidth={12}
+				strokeOffset={0}
+				strokeStyle='round'
+				circleBgStroke='white'
+				circleStroke='#0ebffd'
+			/>
+		</div>
+	);
 }
 
 export default App;
