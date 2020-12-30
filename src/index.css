@@ -1,7 +1,10 @@
 :root {
 	font-size: 62.5%;
 	--white: #ffffff;
-	--black: #000000;
+	--black: #141526;
+	--primary:#0ebffd;
+	--pirmaryHover:#00a0d8;
+	--pirmaryFocus:#0678a0;
 }
 
 body {
